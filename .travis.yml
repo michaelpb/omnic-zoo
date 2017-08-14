@@ -1,0 +1,15 @@
+sudo: required
+
+language: python
+
+services:
+    - docker
+
+before_install:
+    - curl -O https://raw.githubusercontent.com/michaelpb/omnic/master/Dockerfile
+    - docker build -t omniczoo .
+    - docker images
+    - docker run -it omniczoo py.test
+
+script:
+    - docker run omniczoo py.test

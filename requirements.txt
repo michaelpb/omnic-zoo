@@ -1,0 +1,16 @@
+omnic==0.1.12
+
+# Hard dependencies:
+python-magic==0.4.13
+aiohttp==2.1.0
+async_timeout==1.2.1
+
+# Medium dependencies
+sanic==0.5.4
+
+# Soft dependencies (only for admin module ATM)
+jinja2==2.9.6
+
+# Probably deprecated dependencies:
+requests==2.14.2
+
